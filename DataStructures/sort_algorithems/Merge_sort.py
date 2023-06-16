@@ -1,4 +1,5 @@
 def merge_sort(arr):
+    # Complexity: O(n log n) in the worst, average, and best cases
     if len(arr) > 1:
         mid = len(arr) // 2
         left_half = arr[:mid]

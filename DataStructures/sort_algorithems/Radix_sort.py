@@ -1,4 +1,5 @@
 def counting_sort(arr, exp):
+    # Complexity: O(n + k), where n is the number of elements and k is the range of input
     n = len(arr)
     output = [0] * n
     count = [0] * 10
@@ -21,6 +22,7 @@ def counting_sort(arr, exp):
         arr[i] = output[i]
 
 def radix_sort(arr):
+    # Complexity: O(d * (n + k)), where n is the number of elements, k is the range of input, and d is the number of digits in the maximum element
     max_val = max(arr)
     exp = 1
 

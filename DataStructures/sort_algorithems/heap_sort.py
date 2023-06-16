@@ -14,6 +14,7 @@ def heapify(arr, n, i):
         heapify(arr, n, largest)
 
 def heap_sort(arr):
+    # Complexity: O(n log n) in the worst, average, and best cases
     n = len(arr)
 
     # Build a max heap

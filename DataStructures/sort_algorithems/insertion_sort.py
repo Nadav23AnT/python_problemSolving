@@ -1,4 +1,5 @@
 def insertion_sort(arr):
+    # Complexity: O(n^2) in the worst and average case
     for i in range(1, len(arr)):
         key = arr[i]
         j = i - 1

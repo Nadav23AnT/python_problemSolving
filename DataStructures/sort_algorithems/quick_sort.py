@@ -1,4 +1,5 @@
 def quick_sort(arr):
+    # Complexity: O(n^2) in the worst case, O(n log n) in the average case, and O(n log n) in the best case
     if len(arr) <= 1:
         return arr
     else:

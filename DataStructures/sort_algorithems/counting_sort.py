@@ -1,4 +1,5 @@
 def counting_sort(arr):
+    # Complexity: O(n + k), where n is the number of elements and k is the range of input
     max_val = max(arr) + 1
     count = [0] * max_val
 

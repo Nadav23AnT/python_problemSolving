@@ -1,4 +1,5 @@
 def bucket_sort(arr):
+    # Complexity: O(n^2) in the worst case, O(n + k) in the average case, and O(n + k) in the best case, where n is the number of elements and k is the range of input
     max_val = max(arr)
     min_val = min(arr)
     num_buckets = len(arr)
