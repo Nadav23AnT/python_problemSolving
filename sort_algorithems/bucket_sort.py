@@ -1,11 +1,12 @@
 def bucket_sort(arr):
-    # Complexity: O(n^2) in the worst case, O(n + k) in the average case, and O(n + k) in the best case, where n is the number of elements and k is the range of input
+    # Complexity: O(n^2) in the worst case, O(n + k) in the average case, and O(n^2) in the best case, 
+    # where n is the number of elements and k is the range of input
     max_val = max(arr)
     min_val = min(arr)
     num_buckets = len(arr)
     bucket_range = (max_val - min_val) / num_buckets
 
-    buckets = [[] for _ in range(num_buckets)]
+    buckets = [[] for _ in range(num_buckets + 1)] 
 
     for num in arr:
         index = int((num - min_val) / bucket_range)
